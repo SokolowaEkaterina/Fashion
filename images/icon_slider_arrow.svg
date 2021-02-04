@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 6" width="39" height="6">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #171717 } 
+	</style>
+	<g id="PSDFreebies.com">
+		<g id="Slider">
+			<g id="Back Next Arrows">
+				<path id="arrow" class="shp0" d="M36.05 3.98C25.37 3.98 10.68 3.98 0 3.98C0 3.34 0 2.69 0 2.05C10.68 2.05 25.37 2.05 36.05 2.05C36.06 1.37 36.06 0.68 36.07 0C37.04 0.99 38.02 1.99 39 2.98C38.99 3 38.99 3.03 38.99 3.05C38.01 4.03 37.03 5.02 36.05 6C36.05 5.33 36.05 4.65 36.05 3.98Z" />
+			</g>
+		</g>
+	</g>
+</svg>

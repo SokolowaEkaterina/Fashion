@@ -1,0 +1,175 @@
+/*start base*/
+
+body{
+    font-family: 'Montserrat';
+}
+.wrapper{
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    /*background-image: url(../../Fashion_PSD.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;*/
+}
+.page_width{
+    //max-width: 1192px;
+    //padding: 0 10px;
+    max-width: 1172px;
+    padding: 0 90px;
+    margin: 0 auto;
+}
+
+h1, h2, h3{
+    text-transform: uppercase;
+    color: #2d2b27;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 117px;
+    letter-spacing: 2px;
+    line-height: 108px;
+}
+
+h2{
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 20px;
+
+    //margin-top: 100px;
+}
+@media screen and (max-width:1000px){
+    h1{
+        font-size: 90px;
+    }
+}
+@media screen and (max-width:765px){
+    h1{
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+@media screen and (max-width:513px){
+    h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+a{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 23px;
+    color: #171717;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.buttons_block{
+    text-align: center;
+}
+.button{
+    text-transform: uppercase;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #171717;
+    border-radius: 29px;
+    padding: 8px 25px;
+    height: 40px;
+    color: #FFF;
+    font-size: 9px;
+
+    border: 2px solid transparent;
+
+    transition: all .3s;
+    &:hover{
+        text-decoration: none;
+        background-color: #FFF;
+        color: #000000;
+        font-weight: 600;
+    }
+}
+
+.white_botton{
+    color: #121212;
+    background-color: #FFF;
+    font-weight: 600;
+    &:hover{
+        text-decoration: none;
+        background-color: #000000;
+        color: #FFF;
+        font-weight: 600;
+    }
+}
+
+
+.baner{
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 24px;
+    height: 251px;
+    background-color: #00b7d9;
+
+    display: flex;
+
+    .image{
+        //width: 50%;
+        //height: 100%;
+        position: relative;
+        overflow: hidden;
+        order: 1;
+
+        img{
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .text{
+        margin-top: 59px;
+        //margin-bottom: 46px;
+        //margin-right: 155px;
+        width: 80%;
+        padding: 0 20px;
+        text-align: center;
+
+        order: 1;
+
+        h2{
+            line-height: 20px;
+        }
+
+        p{
+            margin-top: 22px;
+            letter-spacing: 6px;
+        }
+
+        .button{
+            margin-top: 34px;
+            //padding: 25px 33px;
+        }
+    }
+
+    .right{
+        order: 2;
+    }
+}
+.baner_bej{
+    background-color: #d7dbd5;
+}
+/*end base*/

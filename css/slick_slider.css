@@ -1,0 +1,197 @@
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track{
+    display: flex;
+    position: relative;
+}
+
+/* Стрелка */
+.main_slider .slick-arrow{
+    position: absolute;
+    right: 16%;
+    z-index: 5;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #171717;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: none;
+
+    transition: all .3s;
+
+    cursor: pointer;
+}
+
+.main_slider .slick-arrow:hover{
+    color: #FFF;
+}
+.main_slider .slick-arrow:hover.slick-arrow.slick-prev::after,
+.main_slider .slick-arrow:hover.slick-arrow.slick-next::after{
+    filter: invert(100%);
+}
+/* Стрелка влево */
+.main_slider .slick-arrow.slick-prev{
+    top: 19%;
+}
+
+.main_slider .slick-arrow.slick-prev::after,
+.main_slider .slick-arrow.slick-next::after{
+    content: '';
+    width: 40px;
+    height: 10px;
+    position: absolute;
+    top: 17px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-image: url(../images/icon_slider_arrow.svg);
+
+    transition: all .3s;
+}
+
+.main_slider .slick-arrow.slick-prev::after{
+    transform: rotate(180deg);
+}
+/* Стрелка вправо */
+.main_slider .slick-arrow.slick-next{
+    top: 23%;
+}
+
+
+
+/*////////////////////////////// product tupes-slider*/
+.product_types{
+    margin-top: 105px;
+}
+
+.product_types p{
+    font-size: 14px;
+    letter-spacing: 6px;
+    line-height: 20px;
+    color: #1a1a1a;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    text-align: center;
+
+    margin-top: 27px;
+}
+
+.product_types_slider{
+    margin-top: 45px;
+    position: relative;
+}
+
+.product_types_slider .product_t_item{
+    position: relative;
+    overflow: hidden;
+    margin: 0 15px;
+}
+
+.product_types_slider .product_t_item img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%
+}
+
+.product_types_slider .product_t_item .button{
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -20%;
+
+}
+
+/* Стрелка */
+.product_types_slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    line-height: 20px;
+    color: #353535;
+    font-weight: 400;
+    width: 113px;
+    height: 44px;
+
+    background-color: /*#afafaf*/ #d7d7d7;
+
+    border: none;
+
+    /*padding: 17px 33px;*/
+
+    transform: rotate(-90deg);
+    z-index: 10;
+
+    transition: all .3s;
+}
+
+.product_types_slider .slick-arrow:hover{
+    background-color: #afafaf;
+}
+
+/*стрелка влева*/
+.product_types_slider .slick-arrow.slick-prev{
+    left: -130px;
+}
+
+/* Стрелка вправо */
+.product_types_slider .slick-arrow.slick-next{
+    right: -130px;
+}
+
+
+/*///////////////////////////////////featured_products_slider*/
+
+.featured_products_slider{
+    position: relative;
+}
+
+.featured_products_slider .slick-arrow{
+    font-size: 0;
+
+    position: absolute;
+    top: 50%;
+    border: 2px solid #d9d9d9;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(23,23,23,0);
+}
+
+.featured_products_slider .slick-arrow::after{
+    content: "";
+    display: block;
+    background-image: url(../images/icon_arrow.svg);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 17px;
+    margin-left: 12px;
+
+    opacity: 20%;
+
+    transition: all .3s;
+}
+
+/*стрелка влева*/
+.featured_products_slider .slick-arrow.slick-prev{
+    left: -90px;
+}
+
+.featured_products_slider .slick-arrow.slick-prev::after{
+    transform: rotate(180deg);
+    margin-left: 9px;
+}
+
+/*стрелка вправо*/
+.featured_products_slider .slick-arrow.slick-next{
+    right: -90px;
+}
+
+.featured_products_slider .slick-arrow:hover.slick-arrow:after{
+    opacity: 100%;
+}

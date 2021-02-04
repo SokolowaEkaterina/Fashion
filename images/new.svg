@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 30" width="48" height="30">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #1a1a1a } 
+		.txt1 { font-size: 11px;line-height: 36px;fill: #f8f8f8;font-weight: 400;font-family: "Montserrat-Regular", "Montserrat" } 
+	</style>
+	<path id="Rechteck 6" class="shp0" d="M0 0L48 0L48 23C48 23 26.17 23 10 23C9.87 23 0 30 0 30L0 0Z" />
+	<text id="NEW" style="transform: matrix(1,0,0,1,9.171,15)" >
+		<tspan x="0" y="0" class="txt1" dx="0 1 1" >NEW</tspan>
+	</text>
+</svg>

@@ -1,0 +1,218 @@
+/*start header*/
+
+header{
+    position: relative;
+    padding: 40px 55px 30px 110px;
+    display: flex;
+    //justify-content: space-between;
+    align-items: flex-start;
+
+    border-bottom: 6px #f3ebdc solid;
+}
+
+.logo{
+    width: 139px;
+    display: block;
+}
+
+nav{
+    //margin-left: -500px;
+    margin-left: 220px;
+    li{
+        display: inline-block;
+        margin-left: 100px;
+
+        &:first-child{
+            margin-left: 0px;
+        }
+    }
+}
+
+.nav_other{
+    position: absolute;
+    right: 55px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+    .bascet{
+        display: block;
+        width: 18px;
+        //height: 28px;
+        height: 18px;
+
+        margin-top: -12px;
+    }
+}
+@media screen and (max-width:1490px){
+    header{
+        justify-content: space-between;
+        padding: 40px 40px 30px 80px;
+    }
+    .logo{
+        padding-right: 10px;
+    }
+    nav{
+        margin-left: 0px;
+    }
+    .nav_other{
+        position: static;
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width:1270px){
+    nav{
+        li{
+            display: inline-block;
+            margin-left: 80px;
+        }
+    }
+}
+@media screen and (max-width:1165px){
+    nav{
+        li{
+            display: inline-block;
+            margin-left: 50px;
+        }
+    }
+}
+.search_block{
+    cursor: pointer;
+    position: relative;
+    margin: 0 24px;
+
+    width: 17px;
+    height: 17px;
+
+    transition: all .3s;
+
+    .search_text{
+        opacity: 0%;
+        position: absolute;
+        left: 0;
+        border: none;
+        border-bottom: 1px #000000 solid;
+        transition: all .3s;
+    }
+
+    img{
+        position: absolute;
+        right: 0;
+    }
+
+}
+.activ_search{
+    width: 190px;
+
+    .search_text{
+        opacity: 100%;
+    }
+}
+
+.burger_menu{
+    //margin-top: 12px;
+    cursor: pointer;
+    position: relative;
+    height: 18px;
+    width: 18px;
+
+    .menu_line{
+        position: relative;
+        height: 2px;
+        width: 18px;
+        background-color: #000000;
+        margin-top: 5px;
+
+        transition: all .1s;
+
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 5px;
+
+            height: 2px;
+            width: 18px;
+            background-color: #000000;
+
+            transition: all .3s;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 5px;
+
+            height: 2px;
+            width: 18px;
+            background-color: #000000;
+
+            transition: all .3s;
+        }
+        
+    }
+
+    .sied_mob_menu{
+        width: 200px;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        //transform: translate(20%, 0%);
+        transform: translate(200%, 0%);
+        background-color: #000000;
+        padding: 40px 40px;
+        margin-top: 47px;
+
+        transition: all .3s;
+        a{
+            color: #FFF;
+            text-transform: uppercase;
+        }
+
+        .main_menu{
+            display: none;
+        }
+
+        .second_menu{
+            li{
+                position: relative;
+
+        }
+
+            .sub_menu{
+                display: none;
+                position: absolute;
+                top: 0;
+                z-index: 2;
+                width: 150px;
+                right: 200px;
+                background-color: black;
+                padding: 20px;
+
+                transition: all .3s linear;
+            }
+
+            .second_menu_li:hover{
+                .sub_menu{
+                    display: block;
+                }
+            }
+        }
+    }
+    .activ{
+        transform: translate(20%, 0%);
+    }
+}
+
+.burger_menu.activ_menu .menu_line{
+   background-color: transparent;
+}
+.burger_menu.activ_menu .menu_line::before{
+    transform: rotate(45deg);
+    top: 0;
+}
+.burger_menu.activ_menu .menu_line::after{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/*end header*/
