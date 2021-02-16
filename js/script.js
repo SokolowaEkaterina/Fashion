@@ -25,10 +25,15 @@ $(document).ready(function(){
     });
 
 
-    //featured_products_slider{
-        $('.featured_products_slider').slick({
-            slidesToShow:4,
-        });
+    //featured_products_slider
+    $('.featured_products_slider').slick({
+        slidesToShow:4,
+    });
+
+    //news_blog_slider
+    $('.blog_news_slider').slick({
+        slidesToShow: 2,
+    });
 
     //tab
     $('.tabs-triggers-item').click( function(e){
