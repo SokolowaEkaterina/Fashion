@@ -1093,3 +1093,55 @@ nav li:first-child {
   margin-top: -16px;
   margin-bottom: 0;
 }
+
+footer {
+  margin-top: 103px;
+  font-family: "Montserrat";
+}
+footer .center {
+  margin-top: 105px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: #727272;
+  font-weight: 300;
+}
+footer img {
+  display: block;
+  margin: 40px auto;
+}
+
+.footer_naw {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_naw .item {
+  width: calc(20%-95px);
+}
+.footer_naw .item .name {
+  font-size: 15px;
+  line-height: 20px;
+  color: #575153;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer_naw .item a,
+.footer_naw .item span {
+  font-size: 14px;
+  line-height: 30px;
+  color: #727272;
+  font-weight: 300;
+}
+.footer_naw .item .phon_email_ofice {
+  font-size: 14px;
+  line-height: 30px;
+  color: #000;
+  font-weight: 700;
+  display: inline-block;
+}
+.footer_naw .item .email {
+  margin-top: -15px;
+}
+.footer_naw .item .ofice {
+  width: 250px;
+}

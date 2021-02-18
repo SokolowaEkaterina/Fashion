@@ -1,0 +1,58 @@
+footer{
+    margin-top: 103px;
+    font-family: 'Montserrat';
+
+    .center{
+        margin-top: 105px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 30px;
+        color: #727272;
+        font-weight: 300;
+
+    }
+
+    img{
+        display: block;
+        margin: 40px auto;
+    }
+}
+
+.footer_naw{
+    display: flex;
+    justify-content: space-between;
+    .item{
+        width:calc(20%-95px);
+        .name{
+            font-size: 15px;
+            line-height:20px;
+            color:#575153;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        a,
+        span{
+            font-size:14px;
+            line-height: 30px;
+            color:#727272;
+            font-weight:300;
+        }
+
+        .phon_email_ofice{
+            font-size: 14px;
+            line-height:30px;
+            color: #000;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .email{
+            margin-top: -15px;
+        }
+
+        .ofice{
+            width: 250px;
+        }
+    }
+}
