@@ -12,8 +12,8 @@ $(document).ready(function(){
 
     //main_slider
     $('.main_slider').slick({
-        autoplay:true,
-        autoplaySpeed: 3500,
+        //autoplay:true,
+        //autoplaySpeed: 3500,
         prevArrow:"<button type='button' class='slick-prev pull-left'>prev</button>",
     });
 

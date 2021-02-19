@@ -44,38 +44,7 @@ nav{
         margin-top: -12px;
     }
 }
-@media screen and (max-width:1490px){
-    header{
-        justify-content: space-between;
-        padding: 40px 40px 30px 80px;
-    }
-    .logo{
-        padding-right: 10px;
-    }
-    nav{
-        margin-left: 0px;
-    }
-    .nav_other{
-        position: static;
-        padding-left: 10px;
-    }
-}
-@media screen and (max-width:1270px){
-    nav{
-        li{
-            display: inline-block;
-            margin-left: 80px;
-        }
-    }
-}
-@media screen and (max-width:1165px){
-    nav{
-        li{
-            display: inline-block;
-            margin-left: 50px;
-        }
-    }
-}
+
 .search_block{
     cursor: pointer;
     position: relative;
@@ -213,6 +182,58 @@ nav{
 .burger_menu.activ_menu .menu_line::after{
     transform: rotate(-45deg);
     top: 0;
+}
+
+@media screen and (max-width:1490px){
+    header{
+        justify-content: space-between;
+        padding: 40px 40px 30px 80px;
+    }
+    .logo{
+        padding-right: 10px;
+    }
+    nav{
+        margin-left: 0px;
+    }
+    .nav_other{
+        position: static;
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width:1270px){
+    nav{
+        li{
+            display: inline-block;
+            margin-left: 80px;
+        }
+    }
+}
+@media screen and (max-width:1165px){
+    header{
+        padding: 40px 55px 30px 50px;
+    }
+    nav{
+        li{
+            display: inline-block;
+            margin-left: 50px;
+        }
+    }
+}
+@media screen and (max-width:1023px){
+    nav{
+        li{
+            display: inline-block;
+            margin-left: 25px;
+        }
+    }
+}
+@media screen and (max-width:963px){
+    nav{
+        display: none;
+    }
+    .burger_menu .sied_mob_menu .main_menu{
+            display: block;
+        }
 }
 
 /*end header*/

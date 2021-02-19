@@ -59,7 +59,30 @@
 .main_slider .slick-arrow.slick-next{
     top: 23%;
 }
-
+@media screen and (max-width:765px){
+    .main_slider .slick-arrow{
+        right: 30%;
+    }
+    .main_slider .slick-arrow.slick-prev{
+        top: 16%;
+    }
+    .main_slider .slick-arrow.slick-next{
+        top: 20%;
+    }
+}
+@media screen and (max-width:559px){
+    .main_slider .slick-arrow{
+        right: 15%;
+    }
+}
+@media screen and (max-width:513px){
+    .main_slider .slick-arrow.slick-prev{
+        top: 7%;
+    }
+    .main_slider .slick-arrow.slick-next{
+        top: 11%;
+    }
+}
 
 
 /*////////////////////////////// product tupes-slider*/

@@ -74,6 +74,7 @@ body {
 .wrapper {
   width: 100%;
   min-height: 100%;
+  min-width: 375px;
   overflow: hidden;
   position: relative;
   /*background-image: url(../../Fashion_PSD.jpg);
@@ -262,37 +263,6 @@ nav li:first-child {
   margin-top: -12px;
 }
 
-@media screen and (max-width: 1490px) {
-  header {
-    justify-content: space-between;
-    padding: 40px 40px 30px 80px;
-  }
-
-  .logo {
-    padding-right: 10px;
-  }
-
-  nav {
-    margin-left: 0px;
-  }
-
-  .nav_other {
-    position: static;
-    padding-left: 10px;
-  }
-}
-@media screen and (max-width: 1270px) {
-  nav li {
-    display: inline-block;
-    margin-left: 80px;
-  }
-}
-@media screen and (max-width: 1165px) {
-  nav li {
-    display: inline-block;
-    margin-left: 50px;
-  }
-}
 .search_block {
   cursor: pointer;
   position: relative;
@@ -406,6 +376,56 @@ nav li:first-child {
   top: 0;
 }
 
+@media screen and (max-width: 1490px) {
+  header {
+    justify-content: space-between;
+    padding: 40px 40px 30px 80px;
+  }
+
+  .logo {
+    padding-right: 10px;
+  }
+
+  nav {
+    margin-left: 0px;
+  }
+
+  .nav_other {
+    position: static;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  nav li {
+    display: inline-block;
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 1165px) {
+  header {
+    padding: 40px 55px 30px 50px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  nav li {
+    display: inline-block;
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 963px) {
+  nav {
+    display: none;
+  }
+
+  .burger_menu .sied_mob_menu .main_menu {
+    display: block;
+  }
+}
 /*end header*/
 /*start main screen*/
 .main_screen {
@@ -671,38 +691,28 @@ nav li:first-child {
     margin-left: -10px;
   }
 }
-@media screen and (max-width: 1120px) {
-  .soc_contacts p {
-    width: 80px;
-    margin-left: -13px;
-  }
-}
 @media screen and (max-width: 1195px) {
-  .main_slider .main_slider_item {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .main_slider .main_slider_item .content {
-    width: 100%;
+    width: 98%;
     margin-right: 0;
   }
   .main_slider .main_slider_item .content p {
     width: 300px;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1160px) {
   .soc_contacts {
-    width: 7%;
+    width: 50px;
   }
   .soc_contacts .item {
-    margin-left: 40%;
+    margin-left: 15px;
   }
   .soc_contacts p {
-    margin-left: -4px;
+    margin-left: -16px;
   }
 
   .main_slider {
-    width: 93%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -716,12 +726,10 @@ nav li:first-child {
   }
 }
 @media screen and (max-width: 995px) {
-  .soc_contacts p {
-    margin-left: -6px;
-  }
-
+  /*soc_contacts p{
+          margin-left: -6px;
+  }*/
   .main_slider .main_slider_item {
-    padding-top: 100px;
     padding-bottom: 180px;
   }
   .main_slider .main_slider_item .content p {
@@ -743,24 +751,8 @@ nav li:first-child {
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 899px) {
-  .soc_contacts {
-    width: 9%;
-  }
-  .soc_contacts .item {
-    margin-left: 35%;
-  }
-  .soc_contacts p {
-    margin-left: -4px;
-  }
-
-  .main_slider {
-    width: 91%;
-  }
-}
 @media screen and (max-width: 866px) {
   .main_slider .main_slider_item {
-    padding-top: 100px;
     padding-bottom: 390px;
   }
   .main_slider .main_slider_item .content p {
@@ -768,7 +760,7 @@ nav li:first-child {
   }
 
   .special_offer {
-    width: 91%;
+    width: 100%;
   }
   .special_offer .img {
     width: 250px;
@@ -799,48 +791,23 @@ nav li:first-child {
     margin-left: -5px;
   }
 }
-@media screen and (max-width: 799px) {
-  .soc_contacts .item {
-    margin-left: 35%;
-  }
-  .soc_contacts p {
-    margin-left: -8px;
-  }
-}
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 513px) {
   .soc_contacts {
-    z-index: 2;
-    width: 40px;
-    padding-top: 120px;
-  }
-  .soc_contacts .item {
-    margin-left: 10px;
-  }
-  .soc_contacts p {
-    margin-left: -20px;
-  }
-
-  .main_slider {
-    width: 95%;
-  }
-
-  .special_offer {
-    width: 94%;
-  }
-}
-@media screen and (max-width: 593px) {
-  .main_slider .main_slider_item {
     padding-top: 100px;
-    padding-bottom: 80px;
   }
 
-  .special_offer {
-    display: none;
+  .main_slider .main_slider_item .content {
+    padding-top: 80px;
   }
-}
-@media screen and (max-width: 495px) {
   .main_slider .main_slider_item .content p {
     width: 80%;
+  }
+
+  .special_offer .img {
+    display: none;
+  }
+  .special_offer .text {
+    width: 100%;
   }
 }
 /*end main screen*/
