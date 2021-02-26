@@ -167,7 +167,17 @@
     right: -130px;
 }
 
+@media screen and (max-width:531px){
+    /*стрелка влева*/
+    .product_types_slider .slick-arrow.slick-prev{
+        left: -85px;
+    }
 
+    /* Стрелка вправо */
+    .product_types_slider .slick-arrow.slick-next{
+        right: -85px;
+    }
+}
 /*///////////////////////////////////featured_products_slider*/
 
 .featured_products_slider{
@@ -222,4 +232,29 @@
 .featured_products_slider .slick-arrow:hover.slick-arrow:after,
 .blog_news_slider .slick-arrow:hover.slick-arrow:after{
     opacity: 100%;
+}
+
+@media screen and (max-width:531px){
+    .featured_products_slider .slick-arrow,
+    .blog_news_slider .slick-arrow{
+        width: 40px;
+        height: 40px;
+    }
+    .featured_products_slider .slick-arrow::after,
+    .blog_news_slider .slick-arrow::after{
+        margin-left: 8px;
+    }
+    .featured_products_slider .slick-arrow.slick-prev::after,
+    .blog_news_slider .slick-arrow.slick-prev::after{
+        margin-left: 4px;
+    }
+    .featured_products_slider .slick-arrow.slick-prev,
+    .blog_news_slider .slick-arrow.slick-prev{
+        left: -50px;
+    }
+
+    .featured_products_slider .slick-arrow.slick-next,
+    .blog_news_slider .slick-arrow.slick-next{
+        right: -50px;
+    }
 }

@@ -82,12 +82,23 @@ body {
   background-position: center top;*/
 }
 
-.page_width {
+.page_width,
+.page_width_other {
   max-width: 1172px;
   padding: 0 90px;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1330px) {
+  .page_width_other {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 531px) {
+  .page_width {
+    padding: 50px;
+  }
+}
 h1, h2, h3 {
   text-transform: uppercase;
   color: #2d2b27;
@@ -104,7 +115,7 @@ h2 {
   font-size: 26px;
   text-align: center;
   letter-spacing: 3px;
-  line-height: 20px;
+  line-height: 40px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -199,14 +210,10 @@ a:hover {
   height: 100%;
 }
 .baner .text {
-  margin-top: 59px;
   width: 80%;
-  padding: 0 20px;
+  padding: 59px 20px 0;
   text-align: center;
   order: 1;
-}
-.baner .text h2 {
-  line-height: 20px;
 }
 .baner .text p {
   margin-top: 22px;
@@ -223,6 +230,28 @@ a:hover {
   background-color: #d7dbd5;
 }
 
+@media screen and (max-width: 1028px) {
+  .baner {
+    height: auto;
+  }
+  .baner .text {
+    margin-top: 0;
+    padding: 30px 30px 20px;
+  }
+}
+@media screen and (max-width: 614px) {
+  .baner {
+    position: relative;
+    overflow: hidden;
+  }
+  .baner .image {
+    display: none;
+  }
+  .baner .text {
+    z-index: 10;
+    width: 100%;
+  }
+}
 /*end base*/
 /*start header*/
 header {
@@ -331,7 +360,7 @@ nav li:first-child {
   transform: translate(200%, 0%);
   background-color: #000000;
   padding: 40px 40px;
-  margin-top: 47px;
+  margin-top: 59px;
   transition: all 0.3s;
 }
 .burger_menu .sied_mob_menu a {
@@ -423,6 +452,17 @@ nav li:first-child {
   }
 
   .burger_menu .sied_mob_menu .main_menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 426px) {
+  .burger_menu .sied_mob_menu {
+    width: 328px;
+  }
+  .burger_menu .sied_mob_menu .second_menu .sub_menu {
+    position: static;
+  }
+  .burger_menu .sied_mob_menu .second_menu .second_menu_li:focus .sub_menu {
     display: block;
   }
 }
@@ -578,7 +618,7 @@ nav li:first-child {
   max-height: 500px;
   padding: 50px 60px 65px 40px;
   color: #FFF;
-  background-image: url(../images/bg_01.png);
+  background-image: url(images/bg_01.png);
 }
 .special_offer .text p:first-child {
   font-size: 38px;
@@ -831,6 +871,17 @@ nav li:first-child {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 996px) {
+  .sections .tabs-triggers-item {
+    margin: 0 15px;
+  }
+}
+@media screen and (max-width: 996px) {
+  .sections .tabs-triggers-item {
+    display: inline-block;
+    margin: 0 15px 15px;
+  }
+}
 .item_goods {
   margin-top: 50px;
   display: none;
@@ -1006,7 +1057,21 @@ nav li:first-child {
   color: #1a1a1a;
   border: 2px solid #d9c8aa;
 }
+.featured_products .button:hover {
+  background-color: #d9c8aa;
+}
 
+@media screen and (max-width: 996px) {
+  .featured_products .sections .tabs-triggers-item_02 {
+    margin: 0 15px;
+  }
+}
+@media screen and (max-width: 996px) {
+  .featured_products .sections .tabs-triggers-item_02 {
+    display: inline-block;
+    margin: 0 15px 15px;
+  }
+}
 /*//////news_blog/////////////////////*/
 .blog_and_news {
   margin-top: 103px;
@@ -1017,6 +1082,7 @@ nav li:first-child {
   margin-top: 54px;
 }
 .blog_news_slider .item {
+  overflow: hidden;
   margin: 0 12.5px;
   position: relative;
   display: block;
@@ -1061,6 +1127,23 @@ nav li:first-child {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 1051px) {
+  .blog_news_slider .item .text {
+    padding: 25px 60px 17px;
+  }
+}
+@media screen and (max-width: 1002px) {
+  .blog_news_slider .item {
+    height: auto;
+  }
+  .blog_news_slider .item .text {
+    padding: 25px 5px 17px;
+    position: static;
+    width: 100%;
+    margin-left: 0px;
+    left: 0%;
+  }
+}
 footer {
   margin-top: 103px;
   font-family: "Montserrat";
@@ -1111,4 +1194,19 @@ footer img {
 }
 .footer_naw .item .ofice {
   width: 250px;
+}
+.footer_naw .item .list_active {
+  display: block;
+}
+
+@media screen and (max-width: 915px) {
+  .footer_naw {
+    flex-wrap: wrap;
+  }
+  .footer_naw .item {
+    width: 100%;
+  }
+  .footer_naw .list {
+    display: none;
+  }
 }

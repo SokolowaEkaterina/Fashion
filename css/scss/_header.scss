@@ -129,7 +129,7 @@ nav{
         transform: translate(200%, 0%);
         background-color: #000000;
         padding: 40px 40px;
-        margin-top: 47px;
+        margin-top: 59px;
 
         transition: all .3s;
         a{
@@ -145,7 +145,7 @@ nav{
             li{
                 position: relative;
 
-        }
+            }
 
             .sub_menu{
                 display: none;
@@ -234,6 +234,26 @@ nav{
     .burger_menu .sied_mob_menu .main_menu{
             display: block;
         }
+}
+@media screen and (max-width:426px){
+    .burger_menu{
+        .sied_mob_menu{
+            width: 328px;
+
+            .second_menu{
+                .sub_menu{
+                    position: static;
+                }
+
+                .second_menu_li:focus{
+                    .sub_menu{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 /*end header*/

@@ -22,17 +22,62 @@ $(document).ready(function(){
     $('.product_types_slider').slick({
         slidesToShow: 3,
         prevArrow:"<button type='button' class='slick-prev pull-left'>prev</button>",
+
+        responsive: [
+            {
+                breakpoint:956,
+                settings:{
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint:618,
+                settings:{
+                    slidesToShow: 1,
+                }
+            },
+        ]
     });
 
 
     //featured_products_slider
     $('.featured_products_slider').slick({
         slidesToShow:4,
+
+        responsive: [
+            {
+                breakpoint:1000,
+                settings:{
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint:804,
+                settings:{
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 615,
+                settings:{
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     //news_blog_slider
     $('.blog_news_slider').slick({
         slidesToShow: 2,
+
+        responsive:[
+            {
+                breakpoint: 830,
+                settings:{
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     //tab
@@ -60,4 +105,11 @@ $(document).ready(function(){
         $($(this).attr('href')).addClass('featured_products_item--active');
     });
     $('.tabs-triggers-item_02:first').click();
+
+    //footer
+
+    $('.name').on('click',function(){
+        //$('.list').togglelist('list_active');
+        $(this).next('.list').slideToggle();
+    });
 });

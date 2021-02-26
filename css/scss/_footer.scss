@@ -54,5 +54,24 @@ footer{
         .ofice{
             width: 250px;
         }
+
+        .list_active{
+            display: block;
+        }
+        
+    }
+
+}
+
+
+@media screen and (max-width:915px){
+    .footer_naw{
+        flex-wrap: wrap;
+        .item{
+            width: 100%;
+        }
+        .list{
+            display: none;
+        }
     }
 }
