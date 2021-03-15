@@ -108,8 +108,10 @@ $(document).ready(function(){
 
     //footer
 
-    $('.name').on('click',function(){
+    $('.name_mob').on('click',function(){
         //$('.list').togglelist('list_active');
         $(this).next('.list').slideToggle();
+        $(this).closest('.item').toggleClass('item_active');
+
     });
 });

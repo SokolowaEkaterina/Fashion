@@ -17,13 +17,18 @@ footer{
         margin: 40px auto;
     }
 }
-
-.footer_naw{
+@media screen and (max-width:560px){
+    footer{
+        margin-top: 20px;
+    }
+}
+.footer_naw, .footer_naw_mob{
     display: flex;
     justify-content: space-between;
     .item{
         width:calc(20%-95px);
         .name{
+            position: relative;
             font-size: 15px;
             line-height:20px;
             color:#575153;
@@ -63,9 +68,48 @@ footer{
 
 }
 
+.footer_naw_mob{
+    display: none;
+
+    .item{
+        margin-bottom: 20px;
+        border-bottom: 1px #575153 solid;
+
+        &::before{
+            content: "";
+            position: absolute;
+            right: 50px;
+            width: 8px;
+            height: 8px;
+
+            border-bottom: 1px solid #000;
+            border-left: 1px solid #000;
+
+            transform: rotate(-45deg);
+            transition: all .3s;
+        }
+
+        .list{
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.footer_naw_mob .item_active{
+    &::before{
+        transform: rotate(135deg);
+    }
+}
+
+
 
 @media screen and (max-width:915px){
     .footer_naw{
+        display: none;
+    }
+
+    .footer_naw_mob{
+        display: block;
         flex-wrap: wrap;
         .item{
             width: 100%;

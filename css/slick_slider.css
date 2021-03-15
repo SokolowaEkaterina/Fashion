@@ -89,7 +89,11 @@
 .product_types{
     margin-top: 105px;
 }
-
+@media screen and (max-width:560px){
+    .product_types{
+        margin-top: 20px;
+    }
+}
 .product_types p{
     font-size: 14px;
     letter-spacing: 6px;

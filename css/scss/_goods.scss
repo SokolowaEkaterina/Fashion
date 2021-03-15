@@ -81,7 +81,6 @@
                 font-size: 13px;
                 letter-spacing: 1px;
                 font-weight: 500;
-
             }
 
             p:nth-child(2){
@@ -143,6 +142,37 @@
 }
 .item_goods--active{
     display: grid;
+}
+
+@media screen and (max-width:695px){
+    .item_goods{
+        grid-template-columns: 2fr 2fr;
+        row-gap: 14px;
+        column-gap: 10px;
+
+        .item{
+            .text_up{
+                padding-top: 10px;
+            }
+
+            .text_up_2{
+                padding-top: 100px;
+            }
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .item_goods{
+        .item {
+            .text_up{
+                padding-left: 10px;
+                    p:nth-child(2){
+    
+                        font-size: 14px;
+                    }
+                }
+        }
+    }
 }
 
 /*end goods*/
