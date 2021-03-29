@@ -76,7 +76,8 @@ p{
     font-weight: 400;
 }
 
-a{
+a,
+input[type="submit"]{
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 23px;
@@ -92,7 +93,8 @@ a{
 .buttons_block{
     text-align: center;
 }
-.button{
+.button,
+input[type="submit"]{
     text-transform: uppercase;
     box-sizing: border-box;
     display: inline-block;

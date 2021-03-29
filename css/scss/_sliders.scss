@@ -1,3 +1,5 @@
+//start sliders
+
 .featured_products{
     margin-top: 95px;
     margin-bottom: 64px;
@@ -19,85 +21,87 @@
         }
     }
 
-    .featured_products_slider{
-        margin-top: 52px;
-
-        .featur_prod_s_item{
-            overflow: hidden;
-            margin: 0 15px;
-
-            .image{
-                display: block;
-                position: relative;
-                height: 388px;
-                img{
-                    object-fit: cover;
-                    object-position: top;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .text{
-                display: block;
-                font-family: 'Montserrat';
-                font-size: 15px;
-                text-align: left;
-
-                padding-top: 30px;
-
-                .title{
-                    color: #1a1a1a;
-                    font-weight: 700;
-                }
-
-                .brend{
-                    margin-top: -12px;
-                    font-weight: 400;
-                    color: #898989;
-                }
-
-                .prise_no{
-                    text-decoration: line-through;
-                    font-weight: 400;
-                    color: #1a1a1a;
-                }
-
-                .prise{
-                    font-weight: 700;
-                }
-
-                .prise, .prise_no{
-                    display: inline;
-                }
-
-                &:hover{
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-
-    .featured_products_item{
-        display: none;
-    }
-    .featured_products_item--active{
-        display: block;
-    }
-
     .buttons_block{
         margin-top: 50px;
     }
-
+    
     .button{
         background-color: #FFF;
         color: #1a1a1a;
         border: 2px solid #d9c8aa;
-
+    
         &:hover{
             background-color: #d9c8aa;
         }
     }
 }
+
+.featured_products_slider{
+    margin-top: 52px;
+
+    .featur_prod_s_item{
+        overflow: hidden;
+        margin: 0 15px;
+
+        .image{
+            display: block;
+            position: relative;
+            height: 388px;
+            img{
+                object-fit: cover;
+                object-position: top;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .text{
+            display: block;
+            font-family: 'Montserrat';
+            font-size: 15px;
+            text-align: left;
+
+            padding-top: 30px;
+
+            .title{
+                color: #1a1a1a;
+                font-weight: 700;
+            }
+
+            .brend{
+                margin-top: -12px;
+                font-weight: 400;
+                color: #898989;
+            }
+
+            .prise_no{
+                text-decoration: line-through;
+                font-weight: 400;
+                color: #1a1a1a;
+            }
+
+            .prise{
+                font-weight: 700;
+            }
+
+            .prise, .prise_no{
+                display: inline;
+            }
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.featured_products_item{
+    display: none;
+}
+.featured_products_item--active{
+    display: block;
+}
+
+
 
 @media screen and (max-width:996px){
     .featured_products{
@@ -204,3 +208,5 @@
         }
     }
 }
+
+//end sliders

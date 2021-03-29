@@ -1,0 +1,81 @@
+//Star Forms
+.forms{
+    margin-top: 120px;
+
+    h2{
+        width: 50%;
+        border-bottom: 1px solid #000;
+        margin: 0px auto 60px;
+    }
+
+    form{
+        width: 40%;
+        margin: 0 auto;
+
+        .text_field{
+            position: relative;
+            width: 100%;
+            margin: 30px 0 ;
+
+            input{
+                width: 100%;
+                padding: 0 5px;
+                height: 40px;
+                font-size: 16px;
+                border: none;
+                border-bottom: 2px solid #ababab;
+                transition: border-bottom .5s;
+
+                &:focus,
+                &:valid{
+                    border-bottom: #464646 2px solid;
+                }
+
+                &:focus ~ label,
+                &:valid ~ label{
+                    top: -5px;
+                    color: #464646;
+                }
+            }
+
+            label{
+                position: absolute;
+                top: 50%;
+                left: 5px;
+                color: #ababab;
+                transform: translateY(-50%);
+                font-size: 16px;
+                pointer-events: none;
+                transition: all .3s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:915px){
+    .forms{
+        form{
+            width: 70%;
+        }
+    }
+}
+@media screen and (max-width:656px){
+    .forms{
+        form{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:560px){
+    .forms{
+        margin-top: 80px;
+        margin-bottom: 70px;
+    }
+}
+@media screen and (max-width:531px){
+    .forms{
+        margin-top: 60px;
+    }
+}
+
+//End Forms

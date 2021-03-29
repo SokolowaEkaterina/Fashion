@@ -80,6 +80,23 @@ $(document).ready(function(){
         ]
     });
 
+
+    //img_sliders
+    $('.big_img_slider').slick({
+        slidesToShow: 1,
+        arrows:false,
+        fade:true,
+        asNavFor: ".lit_img_slider",
+    });
+
+    $('.lit_img_slider').slick({
+        slidesToShow: 3,
+        focusOnSelect: true,
+        asNavFor: ".big_img_slider",
+    });
+
+
+
     //tab
     $('.tabs-triggers-item').click( function(e){
         e.preventDefault();
